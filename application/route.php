@@ -9,6 +9,8 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
+use think\Route;
+
 return [
     '__pattern__' => [
         'name' => '\w+',
@@ -18,4 +20,6 @@ return [
         ':name' => ['index/hello', ['method' => 'post']],
     ],
 
+    /*Route::rule('tyep',"Index/Index/type",'get');
+    Route::get("type","index/index/type")*/
 ];
